@@ -1,0 +1,16 @@
+img{
+	border: 0;
+}
+strong{
+	font-weight: normal;
+}
+ul, ol{
+	list-style: none;
+}
+h1,h2{
+	font-weight: normal;
+	font-size: 12px;
+}
+var,em{
+  font-style: normal;
+}

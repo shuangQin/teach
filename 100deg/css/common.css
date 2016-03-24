@@ -1,0 +1,26 @@
+ .common_title{
+    line-height: 40px;
+    overflow: hidden;
+  }
+  .common_title span{
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+  }
+  .common_title span strong{
+    color: #cc0d13;
+    font-weight: bold;
+  }
+.common_more{
+	display: inline-block;
+	width: 40px;
+	font-size: 12px;
+	text-decoration: none;
+	float: right;
+	color: black;
+	background: url("../images/more_ico.jpg") right 0 no-repeat;
+    line-height: 13px;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-family: "宋体";
+}

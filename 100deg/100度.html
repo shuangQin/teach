@@ -1,0 +1,2242 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>100度</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+	<style type="text/css">
+	 *{
+	 	margin: 0;
+	 	padding: 0;
+	 }
+     .wrap{
+     	width: 960px;
+     	margin: 0 auto;
+     }
+     .header{
+     	background: url("images/header_bg.jpg") 0 0 no-repeat;
+     	overflow: hidden;
+     	zoom:1;
+     }
+     .header_left{
+     	padding: 4px 0 6px 20px; 
+     	float: left;
+     }
+     .header_left span{
+     	margin-right: 16px;
+     	color: #666666;
+     	font-size: 12px;
+     }
+     .header_left a{
+     	color: #999999;
+     	text-decoration: none;
+     	font-size: 12px;
+     	display: inline-block;
+     	width: 39px;
+     	height: 18px;
+        line-height: 18px;
+        border: 2px solid #e5e5e5;
+        margin-right: 5px;
+        text-align: center;
+        border-radius: 3px;
+     }
+     .header_left a.qingdao{
+     	margin-right: 0;
+     }
+     .header_left a:hover{
+     	color: #d60d03;
+     }
+     .header_right{
+     	padding: 9px 31px 8px 0;
+     	float: right;
+     	line-height: 13px;
+     }
+     .header_right a{
+     	color: #666666;
+     	font-size: 12px;
+     	text-decoration: none;
+     	display: inline-block;
+     }
+     .header_right span{
+     	color: #d5d5d5;
+     }
+     .header_right a.join{
+     	width: 57px;
+     	padding-left: 21px;
+     	padding-right: 7px;
+     	background:url("images/join_ico.jpg") 0 0 no-repeat;
+     }
+     .header_right a.manage{
+     	width: 48px;
+     	background: url("images/manage_ico.jpg") 8px 0 no-repeat;
+     	padding-left: 27px;
+     }
+     .nav{
+     	padding: 9px 14px 0 19px;
+     	overflow: hidden;
+     	margin-bottom: 18px;
+      zoom:1;
+     }
+     .nav a{
+     	text-decoration: none;
+     	color: #333333;
+     	font-size: 12px;
+     }
+     .nav_left, .nav_right{
+     	overflow: hidden;
+     	float: left;
+     }
+     .nav_left div{
+     	text-align: center;
+     	width: 46px;
+      float: left;
+      margin-right: 20px;
+     }
+     .nav_left .nav_left_relaxation{
+     	margin-right: 0;
+     }
+     .cate_bg, .night_bg, .shopping_bg, .culture_bg, .relaxation_bg, .space_bg, .intellectual_bg, .bilk_bg, .forum_bg, .club_bg{
+      display: block;
+     	width: 46px;
+     	height: 46px;
+     }
+     .cate_bg{
+     	background: url("images/nav_bg.jpg") 0 0 no-repeat;
+     }
+     .cate_bg:hover{
+     	background-position: 0 -46px;
+     }
+     .night_bg{
+        background: url("images/nav_bg.jpg") -46px 0 no-repeat;
+     }
+     .night_bg:hover{
+     	background-position: -46px -46px;
+     }
+     .shopping_bg{
+     	background: url("images/nav_bg.jpg") -92px 0 no-repeat;
+     }
+     .shopping_bg:hover{
+     	background-position: -92px -46px;
+     }
+     .culture_bg{
+     	background: url("images/nav_bg.jpg") -138px 0 no-repeat;
+     }
+     .culture_bg:hover{
+     	background-position: -138px -46px;
+     }
+     .relaxation_bg{
+     	background: url("images/nav_bg.jpg") -184px 0 no-repeat;
+     }
+     .relaxation_bg:hover{
+     	background-position: -184px -46px;
+     }
+     .nav_logo{
+     	float: left;
+     	margin: 0 28px;
+     }
+     .nav_right div{
+     	text-align: center;
+     	width: 49px;
+        float: left;
+        margin-right: 17px;
+     }
+     .nav_right .nav_right_forum, .nav_right .nav_right_club{
+     	margin-right: 0;
+     }
+     .space_bg{
+     	background: url("images/nav_bg.jpg") -230px 0 no-repeat;
+     }
+     .space_bg:hover{
+     	background-position: -230px -46px;
+     }
+     .intellectual_bg{
+     	background: url("images/nav_bg.jpg") -276px 0 no-repeat;
+     }
+     .intellectual_bg:hover{
+     	background-position: -276px -46px;
+     }
+     .bilk_bg{
+     	background: url("images/nav_bg.jpg") -322px 0 no-repeat;
+     }
+     .bilk_bg:hover{
+     	background-position: -322px -46px;
+     }
+     .forum_bg{
+        background:url("images/nav_bg.jpg") -368px 0 no-repeat;
+     }
+     .forum_bg:hover{
+     	background-position: -368px -46px;
+     }
+     .nav_right .nav_right_club{
+     	margin-left: 12px;
+     	width: 60px;
+     }
+     .club_bg{
+     	background: url("images/nav_bg.jpg") -414px 0 no-repeat;
+     }
+     .club_bg:hover{
+     	background-position: -414px -46px;
+     }
+     .search{
+      width: 960px;
+      height: 126px;
+      background: url("images/search_bg.jpg") 0 0 no-repeat;
+     }
+     .search_link a{
+      text-decoration: none;
+      font-size: 14px;
+      color: black;
+      display: inline-block;
+      width: 81px;
+      height: 27px;
+      text-align: center;
+      line-height: 27px;
+     }
+     .search_link a:hover{
+      background: url("images/link_hover_bg.jpg") 0 0 no-repeat;
+      color: #fbfbfb;
+      font-weight: bold;
+     }
+     .search_find{
+      margin-left: 227px;
+      width: 81px;
+     }
+     .search_main{
+      margin-top: 20px;
+      margin-left: 227px;
+      height: 30px;
+      overflow: hidden;
+     }
+     .search_input{
+      float: left;
+     }
+     .search_input input{
+      width: 405px;
+      border: 0;
+      height: 22px;
+      line-height: 22px;
+      color: #ea7a7a;
+      font-size: 12px;
+      border-radius: 5px;
+     }
+     .search_input a{
+      text-decoration: none;
+      color: #333333;
+      font-size: 12px;
+      font-weight: bold;
+      display: inline-block;
+      width: 61px;
+      height: 23px;
+      background: url("images/search_btn_bg.jpg") 0 0 no-repeat;
+      padding-left: 25px;
+      line-height: 23px;
+      margin-left: 10px;
+     }
+    .search_text{
+      float: left;
+     }
+     .search_text p{
+      font-size: 12px;
+      color: #fbfbfb;
+     }
+     .search_update{
+      margin-top: 24px;
+      margin-left: 227px;
+      overflow: hidden;
+      width: 405px;
+     }
+     .update_text{
+      float: left;
+     }
+     .update_text a{
+      display: inline-block;
+      width: 50px;
+      height: 13px;
+      line-height: 13px;
+      background: url("images/search_update.jpg") 0 0 no-repeat;
+      text-decoration: none;
+     }
+     .update_text span{
+      color: black;
+      font-size: 12px;
+     }
+    .search_name{
+      color: #d30703;
+     }
+     .search_time{
+       color: #999999;
+     }
+     .search_before_after{
+      width: 7px;
+      float: right;
+     }
+     .search_before_after a{
+      display: block;
+      width: 7px;
+      height: 4px;
+      line-height: 4px;
+      text-decoration: none;
+      overflow: hidden;
+     }
+     .search_before{
+      margin-top: 5px;
+      background: url("images/search_before.jpg") 0 0 no-repeat;
+     }
+     .search_after{
+      margin-top: 5px;
+      background: url("images/search_after.jpg") 0 0 no-repeat;
+     }
+    .main{
+      margin-top: 9px;
+      width: 960px;
+      overflow: hidden;
+    }
+    .main_left{
+      width: 711px;
+      float: left;
+    }
+    .main_video_shop{
+      overflow: hidden;
+    }
+    .main_video{
+      width: 350px;
+      height: 420px;
+      /*border: 1px solid #e5e5e5;*/
+      /*border-radius: 10px;*/
+      float: left;
+      background: url("images/video_bg.jpg") 0 0 no-repeat;
+      margin-bottom: 10px;
+    }
+    .video_title{
+      color: #d90000;
+      font-weight: bold;
+      font-size: 15px;
+      background: url("images/video_title_ico.jpg") right 0 no-repeat;
+      /*height: 24px;*/
+      width: 110px;
+      line-height: 24px;
+      margin: 14px 0 14px 0;
+      padding-left: 14px;
+    }
+    .video{
+       text-align: center;
+    }
+    .video_news{
+      padding: 11px 34px 0 18px;
+      overflow: hidden;
+      /*margin-bottom: 13px;*/
+    }
+    .video_img{
+      float: left;
+      margin-right: 24px;
+    }
+    .video_news ul{
+      width: 209px;
+      height: 65px;
+      float: right;
+    }
+    .video_news ul li{
+      line-height: 20px;
+    }
+    .video_news ul li span{
+      height: 20px;
+      width: 6px;
+      background: url("images/video_list_dot.jpg") center center no-repeat;
+      display: inline-block;
+    }
+    .video_news ul li a{
+      text-decoration: none;
+      color: #4d4d4d;
+      font-size: 12px;
+    }
+    .main_shop{
+      width: 350px;
+      height: 420px;
+      /*border: 1px solid #e5e5e5;*/
+      border-top: none;
+      float: right;
+      /*border-radius: 10px;*/
+      background: url("images/shop_bg.jpg") 0 0 no-repeat;
+      margin-bottom: 10px;
+    }
+    .shop_title a{
+      display: inline-block;
+      height: 36px;
+      width: 174px;
+      background: url("images/shop_title_bg.jpg") 0 0 no-repeat;
+      color: #2b2d2d;
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 32px;
+      text-align: center;
+    }
+    .shop_title a:hover{
+      background: url("images/shop_title_hover.jpg") 0 0 no-repeat;
+    }
+    .shop_title a:hover strong{
+      color: #cc0d13;
+    }
+    .shop_title_left{   
+      width: 175px;   
+    }
+   .shop_title a strong{
+     color: #666666;
+    font-weight: bold;
+   }
+   .shop_title_right{
+      width: 173px;
+      margin-left: 2px;
+   }
+   .shop_menu{
+    width: 318px;
+    height: 107px;
+    margin: 0 auto;
+    background: url("images/shop_menu_bg.jpg") right 0 no-repeat;
+    overflow: hidden;
+    margin-bottom: 7px;
+   }
+    .p_ico{
+    position: relative;
+    margin-top: 15px;
+   }
+   .shop_dish{
+    float: left;
+   }
+   .shop_dish a img{
+    margin-top: 10px;
+    margin-right: 22px;
+   }
+   .shop_menuName{
+    font-size: 12px;
+    margin-top: 16px;
+   }
+   .shop_menuName a{
+    text-decoration: none;
+    color: #bb0d0d;
+   }
+   .shop_menuName p{
+    color: #6e6e6e;
+   }
+   .area{
+    margin-top: 12px;
+   }
+   .shop_ico{
+    position: absolute;
+    top: 60px;
+    left: 71px;
+   }
+   .shop_more{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    display: block;
+    width: 37px;
+    /*height: 13px;*/
+    float: right;
+    background: url("images/more_ico.jpg") right 0 no-repeat;
+    margin-right: 15px;
+    /*padding-right: 4px;*/
+    line-height: 13px;
+    margin-top: 6px;
+    font-family: "宋体";
+   }
+   .main_ad{
+    margin-bottom: 10px;
+   }
+  .main_activity_recommend{
+    overflow: hidden;
+  }
+   .main_activity{
+     width: 300px;
+     height: 477px;
+     background: url("images/activity_bg.jpg") 0 0 no-repeat;
+     padding: 23px 25px 0 25px;
+     float: left;
+   }
+   .activity_title{
+    overflow: hidden;
+    zoom:1;
+   }
+  .activity_title_left{
+    padding: 0 9px 9px 0;
+    float: left;
+  }
+  .activity_title_luck{
+    color: #ea2b31;
+    font-size: 12px;
+  }
+  .activity_title_every{
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .activity_time{
+    color: #ec1c16;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .activity_theme{
+    padding: 13px 0 19px 0;
+    overflow: hidden;
+  }
+  .activity_theme img{
+    float: left;
+    margin-right: 12px;
+  }
+  .theme_title span{
+     display: inline-block;
+     text-align: center;
+     line-height: 25px;
+     color: #cf1812;
+     font-weight: bold;
+     font-size: 12px;
+     /*height: 25px;*/
+  }
+  .theme_title .theme_month{
+    width: 26px;
+    background:url("images/title_month.jpg") 0 0 no-repeat;  
+    margin-right: 3px;
+  }
+  .theme_title .theme_date{
+    width: 25px;
+    background:url("images/title_date.jpg") 0 0 no-repeat;
+    margin-right: 7px;
+  }
+  .theme_title{
+    font-weight: bold;
+    color: #333333;
+    font-size: 12px;
+  }
+  .theme_text{
+    color: #999999;
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 6px;
+  }
+   .main_activity table{
+    /*width: 299px;
+    height: 285px;*/
+    background: url("images/activity_th_bg.jpg") 0 0 repeat-x;
+   }
+  .main_activity table tr th{
+   /* line-height: 20px;*/
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+  }
+  .main_activity table tr th span{
+    margin-right: 10px;
+    /*font-size: 12px;*/
+  }
+  .main_activity table tr th span.sun{
+    margin-right: 0;
+  }
+  .main_activity table tr td{
+    background: #ededed;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+  }
+  .main_activity table tr td a{
+    text-decoration: none;
+    color: #666666;
+    font-weight: bold;
+    display: inline-block;
+    width: 40px;
+    /*height: 40px;*/
+    line-height: 40px;
+  }
+  .main_activity table tr td.another_bg{
+    background: #f8f8f8;
+    color: #cfcfcf;
+  }
+  .twentyOne{
+    background: url("images/twentyOne_bg.jpg") 0 0 no-repeat;
+  }
+  .twentyFour{
+    position: relative;
+  }
+  .twentyFour strong{
+    font-weight: bold;
+  }
+  .twentyFour:hover{
+    background: url("images/twentyFour_bg.jpg") 0 0 no-repeat;
+  }
+  .twentyFour_hidden{
+    background: url("images/twentyFour_hover_bg.png") 0 0 no-repeat;
+    width:304px;
+    height: 97px;
+    position: absolute;
+    left: 42px;
+    top: -35px;
+    display: none;
+    padding-top: 11px;
+    padding-left: 24px;
+    overflow: hidden;
+  }
+  .twentyFour:hover .twentyFour_hidden{
+    display: block;
+    filter:alpha(opacity=100);
+  }
+  .twentyFour_hidden var{
+    float: left;
+  }
+  .twentyFour_hidden var img{
+    border: 2px solid #dbdbdb;
+  }
+  .twentyFour_hidden em{
+    float: left;
+    width: 200px;
+    padding-left: 4px;
+    color: #999999;
+    font-weight: normal;
+  }
+  .main_activity a.twentyFour .twentyFour_hidden{
+    line-height: 18px;
+    text-align: left;
+  }
+  .twentyFour_title{
+    display: block;
+    padding-left: 56px;
+    background: url("images/twentyFour_text_bg.jpg") 0 0 no-repeat;
+    margin-bottom: 5px;
+    color: #333333;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+  .main_recommend{
+    width: 320px;
+    height: 477px;
+    background: url("images/recommend_bg.jpg") 0 0 no-repeat;
+    float: right;
+    padding: 23px 15px 0 15px;
+  }
+  .recommend_title{
+    float: left;
+    padding-left: 11px;
+  }
+  .recommend_best{
+    color: #ededed;
+    font-size: 40px;
+    font-weight: bold;
+    background: url("images/best_ico.jpg") 0 0 no-repeat;
+    width: 165px;
+   /* height: 54px;*/
+    float: right;
+    text-align: right;
+    padding-right: 43px;
+    line-height: 54px;
+    /*margin-right: 27px;*/
+  }
+  .recommend_picture{
+    width: 293px;
+    height: 154px;
+    background: #f8f8f8;
+    border-radius: 9px;
+    padding: 13px 15px 12px 13px;
+  }
+  .picture{
+     overflow: hidden;
+  }
+  .picture_big{
+    float: left;
+    margin-right: 7px;
+  }
+  .picture_big .big1{
+    display: none;
+  }
+  .picture_small a{
+    display: block; 
+    width: 60px;
+    height: 36px;
+    float: left;
+    margin-bottom: 10px;
+    /*box-sizing: border-box;*/
+  }
+  .picture_small a img{
+    border: 3px solid white;
+  }
+  .picture_small a:hover img{
+    filter:alpha(opacity=100);
+    border-color: #d6191d;
+  }
+  .picture_small a.p1:hover .picture_big .big img{
+    display: none;
+  }
+  .picture_small a.p1:hover .big1{
+    filter:alpha(opacity=100);
+    display: block;
+  }
+  .recommend_picture p{
+    font-size: 12px;
+  }
+  /*.picture_small{
+    float: right;
+  }*/
+  /*
+  .pictures{
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .picture_big{
+    width: 223px;
+    height: 133px;
+    background: url("images/picture_small3.jpg") 0 0 no-repeat;
+    float: left;
+    margin-right: 7px;
+  }
+  .picture_small a{
+    border: 3px solid white;
+    display: block;
+    width: 54px;
+    height: 30px;
+    float: right;
+  }
+  .picture_small a:hover{
+    border-color: #d6191d;
+  }
+  .p1, .p2{
+    margin-bottom: 10px;
+  }
+  .recommend_picture p{
+    font-size: 12px;
+  }*/
+  .main_recommend table{
+     margin-left: 7px;
+  }
+  .main_recommend table tr td{
+    font-size: 12px;
+    line-height: 28px;
+    color: #454545;
+  }
+  .main_recommend table tr td.recommend_date{
+    color: #999999;
+    padding-left: 28px;
+  }
+  .cart_ico img{
+    padding-right: 8px;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 6px;
+  }
+  .text_ico img{
+    padding-left: 3px;
+    padding-right: 9px;
+    border-right: 1px solid #dfdfdf;
+    margin-right: 6px;
+  }
+  .main_subway_forum{
+    /*margin-top: 10px;*/
+    overflow: hidden;
+  }
+  .main_subway{
+    width: 350px;
+    height: 330px;
+    background: url("images/subway_bg.jpg") 0 0 no-repeat;
+    margin-top: 10px;
+    float: left;
+    margin-bottom: 10px;
+  }
+  .subway_title a{
+    display: inline-block;
+    width: 174px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    background: url("images/shop_title_bg.jpg") 0 0 no-repeat;
+    font-weight: bold;
+    color: #2b2d2d;
+  }
+  .subway_title a:hover{
+    background: url("images/shop_title_hover.jpg") 0 0 no-repeat;
+  }
+  .subway_title a:hover strong{
+    color: #cc0d13;
+  }
+  .subway_title2{
+    margin-left: 2px;
+  }
+  .subway_title a strong{
+    color: #666666;
+    font-weight: bold;
+  }
+  .subway_btn{
+    /*padding: 0 20px 21px 20px;*/
+    margin-top: 246px;
+    text-align: center;
+  }
+  .subway_btn a{
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    color: #3f3f3f;
+    width: 57px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    margin-right: 5px;
+  }
+  .subway_btn a:hover{
+    color: white;
+    border-radius: 5px;
+  }
+  .subway_btn a:hover strong{
+    color: white;
+  }
+  .subway_btn .btn1{
+    background: url("images/subway_btn_bg.jpg") 0 0 no-repeat;
+  }
+  .subway_btn .btn1:hover{
+    background: #dc0000;
+  }
+  .subway_btn .btn2{
+    background: url("images/subway_btn_bg.jpg") 0 -27px no-repeat;
+  }
+  .subway_btn .btn2:hover{
+    background: #023399;
+  }
+  .subway_btn .btn13{
+    background: url("images/subway_btn_bg.jpg") 0 -54px no-repeat;
+  }
+  .subway_btn .btn8{
+    background: url("images/subway_btn_bg.jpg") 0 -81px no-repeat;
+  }
+  .subway_btn .btn8:hover{
+    background: #db0100;
+  }
+  .subway_btn .btn5{
+    background: url("images/subway_btn_bg.jpg") 0 -108px no-repeat;
+    margin-right: 0;
+  }
+  .subway_btn .btn5:hover{
+    background: #913077;
+  }
+  .subway_btn strong{
+    font-weight: bold;
+  }
+  .subway_btn .btn1 strong{
+    color: #de0602;
+  }
+   .subway_btn .btn2 strong{
+    color: #003399;
+  }
+  .subway_btn a.btn13{
+    color: white;
+  }
+  .subway_btn .btn8 strong{
+    color: #cc0000;
+  }
+  .subway_btn .btn5 strong{
+    color: #903077;
+  }
+  .main_forum{
+    background: url("images/forum_bg.jpg") 0 0 no-repeat;
+    width: 336px;
+    height: 330px;
+    float: right;
+    margin-top: 10px;
+    padding-left: 14px;
+    margin-bottom: 10px;
+  }
+  .main_forum ul li{
+    margin-top: 3px;
+    font-size: 12px;
+  }
+  .forum_bg1{
+    background: url("images/forum_li_bg.jpg") 0 0 no-repeat;
+  }
+  .forum_bg2{
+    background: url("images/forum_li_bg.jpg") 0 -30px no-repeat;
+  }
+.forum_number{
+    color: #d80000;
+    font-weight: bold;
+    margin-left: 9px;
+  }
+  .main_forum ul li a{
+    text-decoration: none;
+    display: block;
+    width: 318px;
+    line-height: 30px;
+    /*position: relative;*/
+  }
+  .forum_text{
+    color: #333333;
+    margin-left: 21px;
+    margin-right: 85px;
+  }
+.forum_say{
+    color: #666666;
+  }
+  .forum_box{
+    /*position: absolute;
+    left: 0;
+    top: 0;*/
+    background: url("images/forum_theme.jpg") 0 0 no-repeat;
+    width: 318px;
+    height: 70px;
+    display: none;
+  }
+  .main_forum ul li a:hover .forum_box{
+    display: block;
+    filter:alpha(opacity=100);
+  }
+  .main_forum ul li a:hover .forum_m{
+    display: none;
+  }
+  .forum_box var img{
+    margin: 10px;
+    float: left;
+  }
+  .forum_title{
+    display: block;
+    padding-top: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .forum_name{
+    font-size: 12px;
+    color: white;
+    float: left;
+  }
+  .numbers{
+    display: block;
+    margin-top: 5px;
+    margin-right: 5px;
+    float: right;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .main_know_red{
+    overflow: hidden;
+  }
+  .main_know{
+    background: url("images/main_intellectual_bg.jpg") 0 0 no-repeat;
+    width: 335px;
+    height: 300px;
+    padding-left: 15px;
+    float: left;
+  }
+  .know_somebody{
+    width: 318px;
+   /* height: 26px;*/
+    background: url("images/know_somebody_bg.jpg") 0 2px no-repeat;
+    line-height: 26px;
+    text-align: center;
+  }
+  .know_somebody a{
+    display: inline-block;
+    width: 99px;
+    /*height: 26px;*/
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+  }
+  .know_somebody a:hover{
+    background: url("images/know_somebody_hover.jpg") 0 0 no-repeat;
+  }
+  .main_know ul{
+    width: 313px;
+  }
+  .main_know ul li{
+    line-height: 28px;
+    background: url("images/know_li_bg.jpg") 0 0 repeat-x;
+    font-size: 12px; 
+  }
+  .know_li_dot{
+    display: inline-block;
+    width: 14px;
+    /*height: 28px;*/
+    background: url("images/know_dot.jpg") center center no-repeat;
+  }
+  .main_know ul li a{
+    text-decoration: none;
+    color: #454545;
+  }
+   .main_know ul li a strong{
+    color: #c75d61;
+   }
+  .v1{
+    width: 90%;
+    display: inline-block;
+  }
+  .v2{
+    width: 10%;
+    display: inline-block;
+  }
+  .title{
+    color: #999999;
+    text-align: center;
+  }
+  .v_img1{
+    background: url("images/know_li_img1.jpg") 0 0 no-repeat;
+  }
+  .v_img2{
+    background: url("images/know_li_img2.jpg") 0 0 no-repeat;
+  }
+  .know_search{
+    text-align: center;
+    line-height: 61px;
+    font-size: 12px;
+  }
+  .know_search span{
+    color: #595959;
+    font-weight: bold;
+  }
+  .know_search input{
+    color: #9c9c9c;
+  }
+.know_search a{
+  display: inline-block;
+  width: 24px;
+  /*height: 60px;*/
+  margin-left: 10px;
+  background: url("images/know_go.jpg") center center no-repeat;
+  text-decoration: none;
+}
+.main_red{
+  background: url("images/main_intellectual_bg.jpg") 0 0 no-repeat;
+  width: 335px;
+  height: 300px;
+  float: right;
+  padding-left: 15px;
+}
+.main_red table a{
+  text-decoration: none;
+  width: 78px;
+  height: 78px;
+  display: inline-block;
+}
+.main_red table a.img1{
+  width: 69px;
+  height: 68px;
+  color: white;
+  padding-top: 10px;
+  padding-left: 9px;
+  font-size: 12px;
+} 
+.main_red .img1 h2{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.img1 p{
+  line-height: 18px;
+}
+.img1{
+  background: url("images/red_imgs.jpg") 0 0 no-repeat;
+}
+.img2{
+  background: url("images/red_imgs.jpg") -78px 0 no-repeat;
+}
+.main_red table a.img3{
+  display: block;
+  background: url("images/red_imgs.jpg") -156px 0 no-repeat;
+  width: 156px;
+}
+.img3 em{
+  display: none;
+  width: 96px;
+  font-size: 12px;
+  color: white;
+  padding-top: 12px;
+  padding-left: 12px;
+  line-height: 18px;
+}
+.main_red .img3:hover{
+  background:url("images/img3_hover.jpg") 0 0 no-repeat;
+}
+.main_red .img3:hover em{
+  display: block;
+}
+.img4{
+  background: url("images/red_imgs.jpg") 0 -78px no-repeat;
+}
+.img5{
+  background: url("images/red_imgs.jpg") -78px -78px no-repeat;
+}
+.img6{
+  background: url("images/red_imgs.jpg") -156px -78px no-repeat;
+}
+.img7{
+  background: url("images/red_imgs.jpg") -234px -78px no-repeat;
+}
+.img8{
+  background: url("images/red_imgs.jpg") 0 -156px no-repeat;
+}
+.img9{
+  background: url("images/red_imgs.jpg") -78px -156px no-repeat;
+}
+.img10{
+  background: url("images/red_imgs.jpg") -156px -156px no-repeat;
+}
+.img11{
+  background: url("images/red_imgs.jpg") -234px -156px no-repeat;
+}
+.main_help_media{
+  overflow: hidden;
+}
+.main_help{
+  width: 350px;
+  height: 250px;
+  background: url("images/help_bg.jpg") 0 0 no-repeat;
+  margin-top: 10px;
+  overflow: hidden;
+  float: left;
+}
+.help_title{
+  font-size: 12px;
+  font-weight: bold;
+  color: #010000;
+  padding-top: 14px;
+  padding-left: 15px;
+}
+.help_title strong{
+  font-weight: bold;
+  color: #cc0d13;
+}
+.help_text{
+  font-size: 12px;
+  color: #333333;
+  margin-top: 23px;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 35px;
+  line-height: 18px;
+}
+.help_tel, .help_msn{
+  text-decoration: none;
+  display: inline-block;
+}
+.help_tel{
+  width: 122px;
+  line-height: 18px;
+  padding-left: 22px;
+  background: url("images/help_tel_ico.jpg") 0 0 no-repeat;
+  color: #b80000;
+  font-weight: bold;
+  margin-left: 22px;
+}
+.help_msn{
+  width: 128px;
+  line-height: 16px;
+  padding-left: 23px;
+  background: url("images/help_msn_ico.jpg") 0 0 no-repeat;
+  color: #333333;
+  font-weight: bold;
+}
+.hr1{
+  color: #ededee;
+  opacity: 0.3;
+  margin: 15px 17px 20px 15px;
+}
+.help_user{
+  padding-left: 25px;
+  font-size: 12px;
+  float: left;
+}
+.help_user dt, .help_commercial dt{
+  font-weight: bold;
+}
+.help_user dd, .help_commercial dd{
+  line-height: 18px;
+}
+.help_user dd span, .help_commercial dd span{
+  width: 12px;
+  height: 18px;
+  background: url("images/know_dot.jpg") center center no-repeat;
+  display: inline-block;
+}
+.help_user dd a, .help_commercial dd a{
+  color: #292929;
+  text-decoration: none;
+}
+.help_commercial{
+  float: right;
+  padding-right: 44px;
+  font-size: 12px;
+}
+.main_media{
+  width: 335px;
+  height: 250px;
+  background: url("images/help_bg.jpg") 0 0 no-repeat;
+  float: right;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.media1{
+  display: block;
+  width: 308px;
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  margin-bottom: 13px;
+}
+.media1 img{
+  float: left;
+  margin-right: 10px;
+}
+.mt{
+  padding-top: 15px;
+}
+.media1_text1{
+  line-height: 19px;
+}
+.media1_text2{
+  display: inline-block;
+  margin-top: 14px;
+}
+.media1_text3{
+  display: inline-block;
+  margin-top: 9px;
+}
+.media1_text4{
+  display: inline-block;
+  margin-top: 6px;
+}
+.main_right{
+  float: right;
+}
+.aside_load{
+  width: 240px;
+  height: 140px;
+  background: url("images/load_bg.jpg") 0 0 no-repeat;
+}
+.aside_load .logon{
+  font-size: 12px;
+  color: #010000;
+  font-weight: bold;
+  padding: 14px 0 25px 12px;
+}
+.aside_load p strong{
+  color: #cc0d13;
+  font-weight: bold;
+}
+.load_main{
+  font-size: 12px;
+  margin-left: 21px;
+}
+.load_user{
+  width: 87px;
+  border: 1px solid #e5e5e5;
+  background: #f7f7f7;
+}
+.load_user_password label, .load_user_password input{
+   display:inline-block;
+   vertical-align: middle;
+}
+.load_user_password .load_user{
+  margin-right: 7px;
+}
+.load_remember input{
+  margin-right: 6px;
+}
+.load_remember label, .load_remember input, .load_remember a{
+   display:inline-block;
+   vertical-align: middle;
+}
+.load_main label{
+  width: 50px;
+}
+.load_new{
+  padding:6px 33px 12px 30px;
+}
+.load_new a{
+  text-decoration: none;
+  color: #666666;
+  font-size: 12px;
+}
+.load_login span, .load_password span{
+  display: inline-block;
+  height: 12px;
+  width: 14px;
+  background: url("images/video_list_dot.jpg") center center no-repeat;
+}
+.load_login{
+  margin-right: 29px;
+}
+.aside_dial{
+  margin-top: 10px;
+}
+.aside_computer{
+  margin-top: 10px;
+}
+.aside_coupons{
+  width: 228px;
+  height: 240px;
+  background: url("images/rob_bg.jpg") 0 0 no-repeat;
+  margin-top: 10px;
+  padding-left: 12px;
+}
+.coupons_links{
+  width: 216px;
+  height: 27px;
+  background: url("images/coupons_links_bg.jpg") 0 0 no-repeat;
+}
+.coupons_links a{
+  text-decoration: none;
+  color: #666666;
+  font-size: 12px;
+  width: 67px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 28px;
+}
+.coupons_moods{
+  margin-left: 6px;
+}
+.coupons_links a:hover{
+  background: url("images/coupons_links_hover.jpg") 0 2px no-repeat;
+  color: #333333;
+  font-weight: bold;
+}
+.coupons_ul li{
+  width: 214px;
+  line-height: 26px;
+  background: url("images/coupons_li_bottom.jpg") 0 bottom no-repeat;
+}
+.coupons_ul li.coupons_noline{
+  background: none;
+}
+.coupons_center{
+  text-align: center;
+}
+.coupons_ul a{
+  text-decoration: none;
+  font-size: 12px;
+}
+.coupons_v1{
+  width: 60%;
+  display: inline-block;
+  color: #333333;
+}
+.coupons_v2{
+  width: 20%;
+  display: inline-block;
+  color: #d80000;
+}
+.coupons_v3{
+  width: 12%;
+  display: inline-block;
+  color: #999999;
+}
+.coupons_title span{
+  font-size: 12px;
+  color: #999999;
+}
+.coupons_dot{
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  line-height: 12px;
+  background: url("images/know_dot.jpg") center center no-repeat;
+}
+.aside_today{
+  width: 228px;
+  height: 420px;
+  background: url("images/today_bg.jpg") 0 0 no-repeat;
+  margin-top: 10px;
+  padding-left: 12px;
+}
+.today_menu a, .discount_food{
+  width: 214px;
+  height: 84px;
+  background: url("images/coupons_underline.jpg") 0 bottom no-repeat;
+  text-decoration: none;
+  font-size: 12px; 
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.discount_food{
+  margin-bottom: 0;
+
+}
+.today_menu a img, .discount_food img{
+  float: left;
+  margin-right: 10px;
+}
+.today_menu_text{
+  display: block;
+  margin-top: 8px;
+  line-height: 17px;
+  color: #666666;
+}
+.today_menu_text .menu_s1{
+  color: #b80000;
+  display: block;
+  margin-bottom: 6px;
+}
+.today_menu_text strong{
+  color: #999999;
+}
+.aside_shop360{
+  width: 228px;
+  height: 180px;
+  background: url("images/shop360_bg.jpg") 0 0 no-repeat;
+  margin-top: 10px;
+  padding-left: 12px;
+}
+.aside_shop360 a{
+  color: #333333;
+  text-decoration: none;
+  font-size: 12px;
+}
+.aside_shop360 a span{
+  margin-top: 6px;
+  display: block;
+}
+.aside_discount{
+  width: 228px;
+  height: 350px;
+  background: url("images/discount_bg.jpg") 0 0 no-repeat;
+  margin-top: 10px;
+  padding-left: 12px;
+}
+.today_menu{
+  text-decoration: none;
+  font-size: 12px;
+  color: #c3c3c3;
+  line-height: 28px;
+  background: url("images/coupons_underline.jpg") 0 bottom no-repeat;
+  display: block;
+  width: 208px;
+}
+.today_s1{
+  width: 17px;
+  height: 28px;
+  background: url("images/know_dot.jpg") center center no-repeat;
+}
+.today_st{
+  color: #c75d61;
+}
+.today_s2{
+  color: #333333;
+}
+.no_line{
+ background: none;
+}
+.aside_join{
+  width: 228px;
+  height: 370px;
+  background: url("images/join_bg.jpg") 0 0 no-repeat;
+  margin-top: 10px;
+  padding-left: 12px;
+}
+.jion_taste{
+  overflow: hidden;
+  height: 152px;
+  width: 214px;
+  background: url("images/coupons_li_bottom.jpg") 0 bottom no-repeat;
+}
+.join_a{
+  text-decoration: none;
+  font-size: 12px; 
+  display: block;
+  float: left;
+}
+.join_ml{
+  margin-left: 12px;
+}
+.footer{
+  width: 960px;
+  height: 80px;
+  background: url("images/footer_bg.jpg") 0 0 no-repeat;
+  margin-top: 11px;
+  padding-top: 21px;
+  text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  font-size: 12px;
+  color: #454545;
+  display: inline-block;
+  width: 69px;
+  text-align: center;
+  border-right: 1px solid #919191;
+}
+.footer .footer_index{
+  border-right: none;
+}
+.footer p{
+  font-size: 12px;
+  color: #767676;
+  margin-top: 13px;
+}
+
+	</style>
+</head>
+<body>
+  	<div class="wrap">
+  	 <div class="header">
+  	  <div class="header_left">
+  	  	<span>切换城市：</span><a href="###">北京</a><a href="###">上海</a><a href="###">福州</a><a href="###">广州</a><a href="###" class="qingdao">青岛</a>
+  	  </div>
+  	  <div class="header_right">
+  	    <a href="###" class="join">加盟100度</a><span>|</span><a href="###" class="manage">店铺管理</a>
+  	  </div>
+  	 </div>
+  	 <div class="nav">
+  	  <div class="nav_left">
+  	    <div>
+  	    	<a href="###" class="cate_bg">&nbsp;</a><a href="###">美食</a>
+  	    </div>
+  	    <div>
+  	    	<a href="###" class="night_bg">&nbsp;</a><a href="###">夜店</a>
+  	    </div>
+  	    <div>
+  	    	<a href="###" class="shopping_bg">&nbsp;</a><a href="###">购物</a>
+  	    </div>
+  	    <div>
+  	    	<a href="###" class="culture_bg">&nbsp;</a><a href="###">文化</a>
+  	    </div>
+  	    <div class="nav_left_relaxation">
+  	    	<a href="###" class="relaxation_bg">&nbsp;</a><a href="###">休闲</a>
+  	    </div>
+  	  </div>
+  	  <div class="nav_logo">
+  	  	<img src="images/nav_logo.jpg">
+  	  </div>
+  	  <div class="nav_right">
+  	  	<div>
+  	  		<a href="###" class="space_bg">&nbsp;</a><a href="###">烧客空间</a>
+  	  	</div>
+  	  	<div>
+  	  		<a href="###" class="intellectual_bg">&nbsp;</a><a href="###">知识分子</a>
+  	  	</div>
+  	  	<div>
+  	  		<a href="###" class="bilk_bg">&nbsp;</a><a href="###">白吃白喝</a>
+  	  	</div>
+  	  	<div class="nav_right_forum">
+  	  		<a href="###" class="forum_bg">&nbsp;</a><a href="###">烧客论坛</a>
+  	  	</div>
+  	  	<div class="nav_right_club">
+  	  		<a href="###" class="club_bg">&nbsp;</a><a href="###">企业俱乐部</a>
+  	  	</div>
+  	  </div>
+  	 </div>	
+     <div class="search">
+       <div class="search_link">
+         <a href="###" class="search_find">搜店</a><a href="###">地址</a><a href="###">优惠券</a><a href="###">全文</a><a href="###">视频</a>
+       </div>
+       <div class="search_main">
+        <div class="search_input">
+         <input type="text" value="&nbsp;&nbsp;例如：荷棠鱼坊烤鱼 或 樱花日本料理"><a href="###">搜索</a>
+        </div>
+         <div class="search_text">
+          <p>金钱豹、大江南、湘水之珠、德瑀楼</p>
+          <p>荷棠鱼坊烤鱼、SOHU尚都、湘味楼...</p>
+         </div>
+       </div>
+       <div class="search_update">
+        <div class="update_text">
+         <a href="###">&nbsp;</a><span><strong class="search_name">&nbsp;萱萱&nbsp;</strong><strong class="search_time">5分钟前&nbsp;</strong>写了一篇新文章：那些灿烂华美的瞬间...</span>
+        </div>
+         <div class="search_before_after">
+          <a href="###" class="search_before">&nbsp;</a><a href="###" class="search_after">&nbsp;</a>
+         </div>
+       </div>
+     </div>
+     <div class="main">
+       <div class="main_left">
+        <div class="main_video_shop">
+          <div class="main_video">
+            <p class="video_title">WHAT'HOT</p>
+            <div class="video">
+             <iframe height=288 width=320 src="http://player.youku.com/embed/XMTM5MTAyMjQ3Mg==" frameborder=0 allowfullscreen></iframe>
+            </div>
+            <div class="video_news">
+             <div class="video_img">
+              <img src="images/video_news_ico.jpg">
+             </div>
+              <ul>
+                <li><span>&nbsp;</span><a href="###">现场实录：杭州机场国际系统的崩溃</a></li>
+                <li><span>&nbsp;</span><a href="###">网友自拍国航航班晚点后的遭遇</a></li>
+                <li><span>&nbsp;</span><a href="###">[拍客]绝对最奢侈的航班 注意第41秒</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main_shop">
+            <div class="shop_title">
+              <a href="###" class="shop_title_left"><strong>HOT SHOP&nbsp;</strong>红店铺</a><a href="###" class="shop_title_right"><strong>EW SHOP&nbsp;</strong>新开张</a>
+            </div>
+            <div class="shop_menu p_ico">
+             <div class="shop_dish">
+              <a href="###"><img src="images/shop_dish.jpg"></a>
+             </div>
+              <div class="shop_menuName">
+               <a href="###">御舟和涵珍园国际酒店</a>
+               <p class="area">区域：朝阳/CBD</p>
+               <p>人均：180元</p>
+               <p>人气：12321</p>
+              </div>
+              <div class="shop_ico">
+                <img src="images/menu_ico.png">
+              </div>
+            </div>
+            <div class="shop_menu">
+             <div class="shop_dish">
+              <a href="###"><img src="images/shop_dish.jpg"></a>
+             </div>
+              <div class="shop_menuName">
+               <a href="###">御舟和涵珍园国际酒店</a>
+               <p class="area">区域：朝阳/CBD</p>
+               <p>人均：180元</p>
+               <p>人气：12321</p>
+              </div>
+            </div>
+            <div class="shop_menu">
+             <div class="shop_dish">
+              <a href="###"><img src="images/shop_dish.jpg"></a>
+             </div>
+              <div class="shop_menuName">
+               <a href="###">御舟和涵珍园国际酒店</a>
+               <p class="area">区域：朝阳/CBD</p>
+               <p>人均：180元</p>
+               <p>人气：12321</p>
+              </div>
+            </div>
+            <a href="###" class="shop_more">MORE</a>
+          </div>
+        </div>
+        <div class="main_ad">
+          <img src="images/main_ad.jpg" alt="">
+        </div>
+        <div class="main_activity_recommend">
+          <div class="main_activity">
+            <div class="activity_title">
+              <div class="activity_title_left">
+                <p class="activity_title_luck">LUCKY YODAY</p>
+                <p class="activity_title_every">每日活动</p>
+              </div>
+              <p class="activity_time">2014.2</p>
+            </div>
+            <div class="activity_theme">
+              <img src="images/activity_theme_img.jpg" alt="">
+              <div>
+                <p class="theme_title"><span class="theme_month">07</span><span class="theme_date">21</span>本日主题XXXXXXXX</p>
+                <p class="theme_text">迟到的荣誉——维米尔的写实主义风俗画迟到的荣誉维米尔画迟到的荣誉维米尔米尔米尔</p>
+              </div>
+            </div>
+            <table>
+              <tr class="table_week">
+               <th>MON</th>
+               <th>TUE</th>
+               <th>WED</th>
+               <th>THU</th>
+               <th>FRI</th>
+               <th>SAT</th>
+               <th>SUN</th>
+              </tr>
+              <tr>
+                <td class="another_bg">29</td>
+                <td class="another_bg">30</td>
+                <td><a href="###">1</a></td>
+                <td><a href="###">2</a></td>
+                <td><a href="###">3</a></td>
+                <td><a href="###">4</a></td>
+                <td><a href="###">5</a></td>
+              </tr>
+              <tr>
+                <td><a href="###">6</a></td>
+                <td><a href="###">7</a></td>
+                <td><a href="###">8</a></td>
+                <td><a href="###">9</a></td>
+                <td><a href="###">10</a></td>
+                <td><a href="###">11</a></td>
+                <td><a href="###">12</a></td>
+              </tr>
+              <tr>
+                <td><a href="###">13</a></td>
+                <td><a href="###">14</a></td>
+                <td><a href="###">15</a></td>
+                <td><a href="###">16</a></td>
+                <td><a href="###">17</a></td>
+                <td><a href="###">18</a></td>
+                <td><a href="###">19</a></td>
+              </tr>
+              <tr>
+                <td><a href="###">20</a></td>
+                <td><a href="###" class="twentyOne">21</a></td>
+                <td><a href="###">22</a></td>
+                <td><a href="###">23</a></td>
+                <td>
+                 <a href="###" class="twentyFour">
+                  <strong>24</strong>
+                  <span class="twentyFour_hidden">
+                    <var><img src="images/twentyFour_hover_img.jpg"></var>
+                    <em>
+                     <span class="twentyFour_title">本日主题XXXXXXXX</span>
+                     <span>迟到的荣誉——维米尔的写实主义风俗画迟到的荣誉维米尔</span>
+                    </em>
+                  </span>
+                 </a>
+                </td>
+                <td><a href="###">25</a></td>
+                <td><a href="###">26</a></td>
+              </tr>
+              <tr>
+                <td><a href="###">27</a></td>
+                <td><a href="###">28</a></td>
+                <td><a href="###">29</a></td>
+                <td><a href="###">30</a></td>
+                <td><a href="###">31</a></td>
+                <td><a href="###">1</a></td>
+                <td><a href="###">2</a></td>
+              </tr>
+              <tr>
+                <td class="another_bg">3</td>
+                <td class="another_bg">4</td>
+                <td class="another_bg">5</td>
+                <td class="another_bg">6</td>
+                <td class="another_bg">7</td>
+                <td class="another_bg">8</td>
+                <td class="another_bg">9</td>
+              </tr>
+            </table>
+          </div>
+          <div class="main_recommend">
+            <div class="activity_title">
+              <div class="recommend_title">
+                <p class="activity_title_luck">RECOMMEND</p>
+                <p class="activity_title_every">精彩推荐</p>
+              </div>
+              <p class="recommend_best">BEST</p>
+            </div>
+            <div class="recommend_picture">
+              <div class="pictures">
+                <div class="picture_big">
+                 <var class="big" id="big">
+                  <img src="images/picture_small3.jpg">
+                 </var>
+                 <var class="big1" style="display:none;" id="big1">
+                   <img src="images/picture_big1.jpg" alt="">
+                 </var>
+                 <var class="big2" style="display:none;" id="big2">
+                   <img src="images/picture_big2.jpg" alt="">
+                 </var>
+                </div>
+                <div class="picture_small">
+                  <a href="###" class="p1" id="p1">
+                   <img src="images/picture_small1.jpg" alt="">
+                  </a>
+                  <a href="###" class="p2" id="p2"><img src="images/picture_small2.jpg" alt=""></a>
+                  <a href="###" class="p3" id="p3"><img width="54" height="30" src="images/picture_small3.jpg" alt=""></a>
+                </div>
+              </div>
+              <p class="picture_text">爸爸去哪儿~</p>
+            </div>
+            <table>
+              <tr>
+                <td><a href="###" class="cart_ico"><img src="images/cart_ico.jpg"></a></td>
+                <td>老店换新颜，丰泽园野田重张亮相...</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+              <tr>
+                <td><a href="###" class="text_ico"><img src="images/text_ico.jpg"></a></td>
+                <td>生活中哪些商品的包装有缺陷野田</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+              <tr>
+                <td><a href="###" class="cart_ico"><img src="images/cart_ico.jpg"></a></td>
+                <td>老店换新颜，丰泽园野田重张亮相...</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+              <tr>
+                <td><a href="###" class="text_ico"><img src="images/text_ico.jpg"></a></td>
+                <td>生活中哪些商品的包装有缺陷野田</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+              <tr>
+                <td><a href="###" class="cart_ico"><img src="images/cart_ico.jpg"></a></td>
+                <td>老店换新颜，丰泽园野田重张亮相...</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+              <tr>
+                <td><a href="###" class="text_ico"><img src="images/text_ico.jpg"></a></td>
+                <td>生活中哪些商品的包装有缺陷野田</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+              <tr>
+                <td><a href="###" class="cart_ico"><img src="images/cart_ico.jpg"></a></td>
+                <td>性感红唇妆 模特明星野田都爱它</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+              <tr>
+                <td><a href="###" class="cart_ico"><img src="images/cart_ico.jpg"></a></td>
+                <td>野田止野田 日本全能时尚设计美女</td>
+                <td class="recommend_date">08/07/22</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="main_subway_forum">
+          <div class="main_subway">
+            <div class="subway_title">
+             <a href="###" class="subway_title1"><strong>SUBWAY&nbsp;</strong>地铁交通</a><a href="###" class="subway_title2"><strong>MAP</strong>&nbsp;生活圈</a>
+            </div>
+            <div class="subway_btn">
+            <a href="###" class="btn1"><strong>1</strong>号线</a><a href="###"  class="btn2"><strong>2</strong>号线</a><a href="###" class="btn13"><strong>13</strong>号线</a><a href="###"  class="btn8"><strong>8</strong>号线</a><a href="###" class="btn5"><strong>5</strong>号线</a>
+            </div>
+          </div>
+          <div class="main_forum">
+            <div class="common_title">
+              <span><strong>BBS&nbsp;</strong>论坛</span>
+              <a href="###" class="common_more">MORE</a>
+            </div>
+            <ul>
+              <li class="forum_bg2">
+               <a href="###">
+                <span class="forum_m">
+                 <span class="forum_number">01</span><span href="###" class="forum_text">保你没见过的古怪餐厅</span><span class="forum_say">世说新语</span>
+                </span>
+                <span class="forum_box">
+                  <var> <img src="images/forum_theme_img.jpg"></var><em><span class="forum_title">画皮之——日剧中的手机</span><span class="forum_name">阿瑞斯</span><span class="numbers">ONE</span></em>
+                </span>
+               </a>
+             </li>
+            <li class="forum_bg1">
+              <a href="###">
+               <span class="forum_m">
+               <span class="forum_number">02</span><span href="###" class="forum_text">保你没见过的古怪餐厅</span><span class="forum_say">世说新语</span>
+               </span>
+                <span class="forum_box">
+                  <var> <img src="images/forum_theme_img.jpg"></var><em><span class="forum_title">画皮之——日剧中的手机</span><span class="forum_name">阿瑞斯</span><span class="numbers">TWO</span></em>
+                </span>
+              </a>
+             </li>
+             <li class="forum_bg2">
+              <a href="###">
+               <span class="forum_m">
+                <span class="forum_number">03</span><span href="###" class="forum_text">保你没见过的古怪餐厅</span><span class="forum_say">世说新语</span>
+               </span>
+               <span class="forum_box">
+                  <var> <img src="images/forum_theme_img.jpg"></var><em><span class="forum_title">画皮之——日剧中的手机</span><span class="forum_name">阿瑞斯</span><span class="numbers">THREE</span></em>
+               </span>
+              </a>
+             </li>
+             <li class="forum_bg1">
+              <a href="###">
+               <span class="forum_m">
+                <span class="forum_number">04</span><span href="###" class="forum_text">保你没见过的古怪餐厅</span><span class="forum_say">世说新语</span>
+               </span>
+               <span class="forum_box">
+                  <var> <img src="images/forum_theme_img.jpg"></var><em><span class="forum_title">画皮之——日剧中的手机</span><span class="forum_name">阿瑞斯</span><span class="numbers">FOUR</span></em>
+               </span>
+              </a>
+             </li>
+              <li class="forum_bg2">
+              <a href="###">
+               <span class="forum_m">
+                <span class="forum_number">05</span><span href="###" class="forum_text">保你没见过的古怪餐厅</span><span class="forum_say">世说新语</span>
+               </span>
+                <span class="forum_box">
+                  <var> <img src="images/forum_theme_img.jpg"></var><em><span class="forum_title">画皮之——日剧中的手机</span><span class="forum_name">阿瑞斯</span><span class="numbers">FIVE</span></em>
+                </span>
+              </a>
+             </li>
+             <li class="forum_bg1">
+              <a href="###">
+               <span class="forum_m">
+                <span class="forum_number">06</span><span href="###" class="forum_text">保你没见过的古怪餐厅</span><span class="forum_say">世说新语</span>
+               </span>
+                <span class="forum_box">
+                  <var> <img src="images/forum_theme_img.jpg"></var><em><span class="forum_title">画皮之——日剧中的手机</span><span class="forum_name">阿瑞斯</span><span class="numbers">SIX</span></em>
+                </span>
+              </a>
+             </li>
+             <li class="forum_bg2">
+              <a href="###">
+               <span class="forum_m">
+                <span class="forum_number">07</span><span href="###" class="forum_text">保你没见过的古怪餐厅</span><span class="forum_say">世说新语</span>
+               </span>
+                <span class="forum_box">
+                  <var> <img src="images/forum_theme_img.jpg"></var><em><span class="forum_title">画皮之——日剧中的手机</span><span class="forum_name">阿瑞斯</span><span class="numbers">SEVEN</span></em>
+                </span>
+              </a>
+             </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main_ad">
+          <img src="images/main_ad.jpg" alt="">
+        </div>
+        <div class="main_know_red">
+          <div class="main_know">
+             <div class="common_title">
+              <span><strong>LIFESTYLE ADVICE&nbsp;</strong>知道分子</span>
+              <a href="###" class="common_more">MORE</a>
+            </div>
+            <div class="know_somebody">
+              <a href="###">有人在问</a><a href="###">有人知道</a><a href="###">热门问题</a>
+            </div>
+            <ul>
+              <li>
+               <span class="v1 title">标题</span><span class="v2 title">状态</span>
+              </li>
+              <li>
+               <a href="###" class="v1"><span class="know_li_dot">&nbsp;</span>【<strong>美食</strong>】推荐几款性价比比较好的冰箱...</a><span class="v2 v_img1">&nbsp;</span>
+              </li>
+              <li>
+               <a href="###" class="v1"><span class="know_li_dot">&nbsp;</span>【<strong>购物</strong>】生活中哪些商品的包装有缺陷</a><span class="v2 v_img2">&nbsp;</span>
+              </li>
+              <li>
+               <a href="###" class="v1"><span class="know_li_dot">&nbsp;</span>【<strong>休闲</strong>】为什么我第一次进入保姆和宠物</a><span class="v2 v_img1">&nbsp;</span>
+              </li>
+              <li>
+               <a href="###" class="v1"><span class="know_li_dot">&nbsp;</span>【<strong>美食</strong>】推荐几款性价比比较好的冰箱...</a><span class="v2 v_img2">&nbsp;</span>
+              </li>
+              <li>
+               <a href="###" class="v1"><span class="know_li_dot">&nbsp;</span>【<strong>购物</strong>】生活中哪些商品的包装有缺陷</a><span class="v2 v_img2">&nbsp;</span>
+              </li>
+            </ul>
+            <div class="know_search">
+              <span>搜搜谁知道：</span><input type="text" value="输入关键字" size="20"><a href="###">&nbsp;</a>
+            </div>
+          </div>
+          <div class="main_red">
+            <div class="common_title">
+              <span><strong>HOT&nbsp;</strong>红人烧客</span>
+              <a href="###" class="common_more">MORE</a>
+            </div>
+            <table>
+              <tr>
+                <td>
+                 <a href="###" class="img1"><h2>HOT</h2><p>潮流服饰</p><p>任我行</p></a>
+                </td>
+                <td><a href="###" class="img2">&nbsp;</a></td>
+                <td colspan="2">
+                 <a href="###" class="img3">
+                   <em>
+                     <span>用户名：性感宝贝</span><span>区域：朝阳CBD</span><br><span>人气：124987</span>
+                   </em>
+                 </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="###" class="img4">&nbsp;</a></td>
+                <td><a href="###" class="img5">&nbsp;</a></td>
+                <td><a href="###" class="img6">&nbsp;</a></td>
+                <td><a href="###" class="img7">&nbsp;</a></td>
+              </tr>
+              <tr>
+                <td><a href="###" class="img8">&nbsp;</a></td>
+                <td><a href="###" class="img9">&nbsp;</a></td>
+                <td><a href="###" class="img10">&nbsp;</a></td>
+                <td><a href="###" class="img11">&nbsp;</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="main_help_media">
+          <div class="main_help">
+            <p class="help_title"><strong>HELP&nbsp;</strong>在线帮助</p>
+            <p class="help_text">&nbsp;&nbsp;您有任何问题，都可以通过全国免费电话，或MSN在线客服与我们联系！</p>
+            <a href="###" class="help_tel">4006-100-516</a><a href="###" class="help_msn">100du.com@live.cn</a>
+            <hr class="hr1">
+           <dl class="help_user">
+             <dt>用户帮助</dt>
+             <dd><span>&nbsp;</span><a href="###">金币是什么</a></dd>
+             <dd><span>&nbsp;</span><a href="###">怎样查看我的等级</a></dd>
+             <dd><span>&nbsp;</span><a href="###">怎么赚积分</a></dd>
+           </dl>    
+           <dl class="help_commercial">
+             <dt>商户帮助</dt>
+             <dd><span>&nbsp;</span><a href="###">如何成为明星商户</a></dd>
+             <dd><span>&nbsp;</span><a href="###">邮件推广</a></dd>
+             <dd><span>&nbsp;</span><a href="###">论坛推广方法</a></dd>
+           </dl>      
+          </div>
+          <div class="main_media">
+            <div class="common_title">
+              <span><strong>100DU&nbsp;IN&nbsp;THE&nbsp;MEDIA&nbsp;</strong>媒体声音</span>
+              <a href="###" class="common_more">MORE</a>
+            </div>
+            <a href="###" class="media1 mt">
+             <var>
+              <img src="images/media_ico1.jpg">
+             </var>
+             <em class="media1_text1">
+              <span>日本最大的财经杂志《钻石周刊》对100度享乐网的报道</span>
+             </em>
+            </a>
+            <a href="###" class="media1">
+             <var>
+              <img src="images/media_ico2.jpg">
+             </var>
+             <em class="media1_text2">
+              <span>视频网站100度享乐网获网络试听许可证</span>
+             </em>
+            </a>
+             <a href="###" class="media1">
+             <var>
+              <img src="images/media_ico3.jpg">
+             </var>
+             <em class="media1_text3">
+              <span>互联网上的视频橱窗</span>
+             </em>
+            </a>
+            <a href="###" class="media1">
+             <var>
+              <img src="images/media_ico4.jpg">
+             </var>
+             <em class="media1_text4">
+              <span>享乐主义的机会</span>
+             </em>
+            </a>
+          </div>
+        </div>
+       </div>
+       <div class="main_right">   
+        <div class="aside_load">
+          <p class="logon"><strong>LOAD&nbsp;</strong>登陆</p>
+         <div class="load_main">
+          <p class="load_user_password">
+           <label>用户名：</label><input type="text" class="load_user mb"><input type="checkbox">记住我
+          </p>
+          <p class="load_remember">
+           <label>密&nbsp;码：</label><input type="text" class="load_user"><a href="###"><img src="images/load_register.jpg"></a>
+          </p>
+        </div>
+        <div class="load_new">
+         <a href="###" class="load_login"><span>&nbsp;</span>新用户注册</a><a href="###" class="load_password"><span>&nbsp;</span>忘记密码了</a>
+        </div>
+        </div>
+        <div class="aside_dial">
+         <img src="images/dial_bg.jpg" alt="">
+        </div>
+        <div class="aside_computer">
+         <img src="images/computer_bg.jpg" alt="">
+        </div>
+        <div class="aside_coupons">
+          <div class="common_title">
+              <span><strong>COUPONS&nbsp;</strong>抢卷儿</span>
+              <a href="###" class="common_more">MORE</a>
+          </div>
+          <div class="coupons_links">
+            <a href="###" class="coupons_moods">人气</a><a href="###">推荐</a><a href="###">最新</a>
+          </div>
+          <ul class="coupons_ul">
+            <li class="coupons_title coupons_center">
+              <span class="coupons_v1">商店名</span><span class="coupons_v2">省</span><span class="coupons_v3">打印</span>
+            </li>
+            <li>
+             <a href="###"><span class="coupons_dot">&nbsp;</span><span class="coupons_v1">老北京一尊黄牛</span><span class="coupons_v2 coupons_center">12%</span><span class="coupons_v3">345</span></a>
+            </li>
+            <li>
+             <a href="###"><span class="coupons_dot">&nbsp;</span><span class="coupons_v1">老北京一尊黄牛</span><span class="coupons_v2 coupons_center">12%</span><span class="coupons_v3">345</span></a>
+            </li>
+            <li>
+             <a href="###"><span class="coupons_dot">&nbsp;</span><span class="coupons_v1">老北京一尊黄牛</span><span class="coupons_v2 coupons_center">12%</span><span class="coupons_v3">345</span></a>
+            </li>
+            <li>
+             <a href="###"><span class="coupons_dot">&nbsp;</span><span class="coupons_v1">老北京一尊黄牛</span><span class="coupons_v2 coupons_center">12%</span><span class="coupons_v3">345</span></a>
+            </li>
+            <li class="coupons_noline">
+             <a href="###"><span class="coupons_dot">&nbsp;</span><span class="coupons_v1">老北京一尊黄牛</span><span class="coupons_v2 coupons_center">12%</span><span class="coupons_v3">345</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="aside_today">
+          <div class="common_title">
+              <span><strong>SHOP&nbsp;</strong>今日推荐</span>
+              <a href="###" class="common_more">MORE</a>
+          </div>
+          <div class="today_menu">
+            <a href="###">
+             <span>
+              <var>
+                <img src="images/today_food_img.jpg">
+              </var>
+              <em class="today_menu_text">
+                <span class="menu_s1">汉莱国际美食百汇</span>
+                <span><strong>口味：</strong>创意中餐</span><br>
+                <span><strong>区域：</strong>朝阳/CBD</span>
+              </em>
+             </span>
+            </a>
+            <a href="###">
+             <span>
+              <var>
+                <img src="images/today_food_img.jpg">
+              </var>
+              <em class="today_menu_text">
+                <span class="menu_s1">汉莱国际美食百汇</span>
+                <span><strong>口味：</strong>创意中餐</span><br>
+                <span><strong>区域：</strong>朝阳/CBD</span>
+              </em>
+             </span>
+            </a>
+            <a href="###">
+             <span>
+              <var>
+                <img src="images/today_food_img.jpg">
+              </var>
+              <em class="today_menu_text">
+                <span class="menu_s1">汉莱国际美食百汇</span>
+                <span><strong>口味：</strong>创意中餐</span><br>
+                <span><strong>区域：</strong>朝阳/CBD</span>
+              </em>
+             </span>
+            </a>
+            <a href="###">
+             <span>
+              <var>
+                <img src="images/today_food_img.jpg">
+              </var>
+              <em class="today_menu_text">
+                <span class="menu_s1">汉莱国际美食百汇</span>
+                <span><strong>口味：</strong>创意中餐</span><br>
+                <span><strong>区域：</strong>朝阳/CBD</span>
+              </em>
+             </span>
+            </a>
+          </div>
+        </div>
+        <div class="aside_shop360">
+           <div class="common_title">
+              <span><strong>360°SHOP&nbsp;</strong>全景逛店</span>
+              <a href="###" class="common_more">MORE</a>
+          </div>
+          <a href="###">
+            <img src="images/shop360_img.jpg">
+            <span>苹果雪梨排骨汤</span>
+          </a>
+        </div>
+        <div class="aside_discount">
+          <div class="common_title">
+              <span><strong>SHOP&nbsp;</strong>折扣店</span>
+              <a href="###" class="common_more">MORE</a>
+          </div>
+           <a href="###" class="discount_food">
+             <span>
+              <var>
+                <img src="images/today_food_img.jpg">
+              </var>
+              <em class="today_menu_text">
+                <span class="menu_s1">汉莱国际美食百汇</span>
+                <span><strong>口味：</strong>创意中餐</span><br>
+                <span><strong>区域：</strong>朝阳/CBD</span>
+              </em>
+             </span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">休闲</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">休闲</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">美食</strong>]&nbsp;<span class="today_s2">老北京一尊皇牛</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">购物</strong>]&nbsp;<span class="today_s2">老北京一尊皇牛</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">美食</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">美食</strong>]&nbsp;<span class="today_s2">老北京一尊皇牛</span>
+          </a>
+           <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">休闲</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+           <a href="###" class="today_menu no_line">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">休闲</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+        </div>
+        <div class="aside_join">
+           <div class="common_title">
+              <span><strong>COUPONS&nbsp;</strong>最新加盟</span>
+              <a href="###" class="common_more">MORE</a>
+          </div>
+          <div class="jion_taste">
+           <a href="###" class="join_a">
+             <span>
+              <var>
+                <img src="images/join_img1.jpg">
+              </var>
+              <em class="today_menu_text">
+                <span class="menu_s1">汉莱国际美食百汇</span>
+                <span><strong>口味：</strong>创意中餐</span><br>
+                <span><strong>区域：</strong>朝阳/CBD</span>
+              </em>
+             </span>
+          </a>
+           <a href="###" class="join_a join_ml">
+             <span>
+              <var>
+                <img src="images/join_img2.jpg">
+              </var>
+              <em class="today_menu_text">
+                <span class="menu_s1">汉莱国际美食百汇</span>
+                <span><strong>口味：</strong>创意中餐</span><br>
+                <span><strong>区域：</strong>朝阳/CBD</span>
+              </em>
+             </span>
+          </a>
+         </div>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">休闲</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">休闲</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">美食</strong>]&nbsp;<span class="today_s2">老北京一尊皇牛</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">购物</strong>]&nbsp;<span class="today_s2">老北京一尊皇牛</span>
+          </a>
+          <a href="###" class="today_menu">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">美食</strong>]&nbsp;<span class="today_s2">瀚茶缘（雍和宫店）</span>
+          </a>
+          <a href="###" class="today_menu no_line">
+           <span class="today_s1">&nbsp;</span>[<strong class="today_st">美食</strong>]&nbsp;<span class="today_s2">老北京一尊皇牛</span>
+          </a>
+        </div>
+       </div>
+     </div>
+     <div class="footer">
+       <a href="###">关于我们</a><a href="###">联系我们</a><a href="###">版权声明</a><a href="###">加入我们</a><a href="###">问题反馈</a><a href="###">友情链接</a><a href="###">网站地图</a><a href="###" class="footer_index">视频索引</a>
+       <p>Copyright @ 2008 www.100du.com 100度享乐网 版权所有&nbsp;&nbsp;京ICP证070374号</p>
+     </div>
+  	</div>
+    <script type="text/javascript">
+      var p1=document.getElementById("p1");
+      var p2=document.getElementById("p2");
+      var p3=document.getElementById("p3");
+      var big=document.getElementById("big");
+      var big1=document.getElementById("big1");
+      var big2=document.getElementById("big2");
+
+     p1.onmouseover=function(){
+        big1.style.display="block";
+        big.style.display="none";
+      }
+     p1.onmouseout=function(){
+        big1.style.display="none";
+        big.style.display="block";
+      } 
+     p2.onmouseover=function(){
+        big2.style.display="block";
+        big.style.display="none";
+      }
+     p2.onmouseout=function(){
+        big1.style.display="none";
+        big2.style.display="none";
+        big.style.display="block";
+      }
+    </script>
+</body>
+</html>
