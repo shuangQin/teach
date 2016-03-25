@@ -1,0 +1,356 @@
+/*** 头部 ***/
+/*** 一部分 ***/
+.header_nav1{
+	background-color: #f5f5f5;
+	div{
+		width: 1199px;
+		height: 30px;
+	    line-height: 30px;
+	    margin: 0 auto;
+	    text-align: right;
+	    a{
+	    	color: #4c4c4c;
+	    }
+	    .register{
+	    	margin-right: 12px;
+	    }
+	    .myAccount{
+	    	margin-left: 8px;
+	    	margin-right: 12px;
+	    	border-left: 1px solid #838383;
+	    	border-right: 1px solid #838383;
+	    	padding: 0 7px;
+	    }
+	    .download:before{
+	    	content: "";
+	    	display: inline-block;
+	    	width: 11px;
+	    	height: 18px;
+	    	background: url("../img/icons.png") 0 0 no-repeat;
+	    	vertical-align: -5px;
+	    	margin-right: 8px;
+	    }
+	}
+}
+
+/*** 另一部分 ***/
+.header p {
+  width: 1193px;
+  margin: 0 auto;
+}
+.header p .header_span1 {
+  background: url(../img/v.jpg) right center no-repeat;
+  padding-right: 25px;
+}
+.header p a {
+  color: #4c4c4c;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+}
+.header p .header_a1 {
+  margin-left: 770px;
+}
+.header p .header_span2 {
+  margin-left: 7px;
+  margin-right: 17px;
+}
+.header p .header_span3 {
+  margin-left: 6px;
+  margin-right: 16px;
+}
+.header p .header_a3 {
+  background: url(../img/phone.jpg) right center no-repeat;
+  padding-right: 22px;
+}
+
+.header_search{
+	width: 1199px;
+	height: 98px;
+	margin: 0 auto;
+	img,div,p,a{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	div{
+		margin-left: 42px;
+		margin-right: 27px;
+		color: #4c4c4c;
+		font-size: 14px;
+		cursor: pointer;
+		position: relative;
+		&:hover{
+			ul{
+				display: block;
+			}
+		}
+		var{
+			line-height: 36px;
+			&:after{
+				content: "";
+				display: inline-block;
+				width: 11px;
+				height: 6px;
+				background: url("../img/icons.png") 0 -23px no-repeat;
+				margin-left: 9px;
+		}
+		}
+		ul{
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 32px;
+			min-width: 60px;
+			line-height: 25px;
+			border: 1px solid #CCC;
+			text-align: center;
+			background-color: white;
+			li{
+				&:hover{
+					background-color: #ffa130;
+					color: white;
+				}
+			}
+		}
+	}
+	input, .search{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	input{
+		width: 391px;
+		height: 32px;
+		border: 2px solid #ffa130;
+		border-right: none;
+		font-size: 14px;
+		color: #808080;
+		font-family: "Microsoft Yahei";
+		letter-spacing: 1px;
+		padding-left: 14px;
+	}
+	.search{
+		width: 69px;
+		height: 36px;
+		line-height: 36px;
+		background-color: #ffa130;
+		text-align: center;
+		color: white;
+		font-size: 14px;
+	}
+	.service, .cart{
+		width: 114px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		border: 2px solid #e0e0e0;
+		color: #808080;
+		font-size: 14px;
+		&:hover{
+			border-color: #ffa130;
+		}
+	}
+	.service{
+		margin-left: 84px;
+		margin-right: 27px;
+	}
+	.cart:before{
+		content: "";
+		display: inline-block;
+		width: 19px;
+		height: 17px;
+		background: url("../img/icons.png") 0 -35px no-repeat;
+		margin-right: 11px;
+		vertical-align: -3px;
+	}
+}
+
+.header_nav2{
+   background-color: #ffa130;
+   height: 48px;
+   line-height: 48px;
+   ul{
+   	width: 1199px;
+   	margin: 0 auto;
+   	li{
+   		float: left;
+   		a{
+   			display: block;
+   			color: white;
+   			font-size: 16px;
+   			width: 171px;
+   			text-align: center;
+   			&:hover{
+   				background-color: #f88f1f;
+   			}
+   		}
+   	}
+   	.active{
+   		a{
+   			background-color: #f88f1f;
+   		}
+   	}
+   }
+}
+
+/*** 主体部分 ***/
+.main{
+	width: 1199px;
+	margin: 30px auto 0;
+}
+.main_left{
+	float: left;
+	ul{
+		width: 169px;
+		height: 411px;
+		text-align: center;
+		border: 1px solid #e6e6e6;
+		border-top: none;
+		li{
+		  a{
+			display: block;
+			color: #666;
+			font-size: 14px;
+			height: 50px;
+			line-height: 50px;
+			&:hover{
+				background-color: #f98f1f;
+				color: white;
+			}
+		   }
+			&:first-child{
+				a{
+					border-top: 4px solid #ffa130;
+					height: 46px;
+					line-height: 46px;
+				}
+			}
+		}
+		li.active{
+			background-color: #f88f1f;
+			a{
+				color: white;
+			}
+		}
+	}
+}
+
+.main_right{
+	float: right;
+	width: 1004px;
+}
+
+.myOrder{
+    height: 63px;
+    line-height: 63px;
+    span{
+        height: 21px;
+        border-left: 4px solid #f66061;
+        padding: 3px 0 4px 12px;
+        color: #1a1a1a;
+        font-size: 16px;        
+    }
+    a{
+        color: #999;
+        font-size: 14px;
+        float: right;
+        margin-right: 26px;
+    }
+}
+
+.order{
+    border: 1px solid #e6e6e6;
+    .order_num{
+      height: 43px;
+      line-height: 43px;
+      font-size: 14px;
+      color: #666;
+      padding-left: 18px;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    .orderList{
+        padding-top: 7px;
+        padding-bottom: 8px;
+        div{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        table{
+            td:first-child{
+                padding: 13px 5px 12px 18px;
+            }
+            .text{
+                color: #4c4c4c;
+                font-size: 14px;
+                width: 206px;
+                padding: 0 22px;
+            }
+            .food_num{
+                padding: 0 64px;
+                color: #666;
+                font-size: 14px;
+            }
+        }
+        .order_account{
+            width: 183px;
+            text-align: center;
+            span{
+                font-size: 16px;
+                color: #ed601b;
+            }
+            p{
+                font-size: 13px;
+                color: #999;
+            }
+        }
+        .order_status{
+            width: 159px;
+            text-align: center;
+            border-left: 1px solid #e6e6e6;
+            border-right: 1px solid #e6e6e6;
+           color: #666;
+           font-size: 13px;
+        }
+        .order_payment{
+            width: 157px;
+            text-align: center;
+            a{
+                display: inline-block;
+                width: 100px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                background-color: #f5f5f5;
+                border: 1px solid #e6e6e6;
+                color: #4c4c4c;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/*** 尾部 ***/
+.footer{
+	width: 100%;
+	background-color: #f9f0e4;
+	text-align: center;
+	padding-top: 41px;
+	padding-bottom: 40px;
+	ul{
+		width: 610px;
+		margin: 0 auto 14px;
+	}
+	li{
+		float: left;
+		color: #1a1a1a;
+		font-size: 12px;
+		a{
+		   color: #1a1a1a;
+		   margin: 0 12px;
+		}
+	}
+	p{
+		color: #5e5e5e;
+		font-size: 12px;
+	}
+}

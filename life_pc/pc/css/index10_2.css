@@ -1,0 +1,200 @@
+.main_left {
+  margin-right: 24px;
+}
+.main_right {
+  float: left;
+}
+.main_right .nav_list ul {
+  border-bottom: 1px solid #e6e6e6;
+}
+.main_right .nav_list ul li {
+  width: 106px;
+  height: 55px;
+  float: left;
+  margin-right: 61px;
+  text-align: center;
+}
+.main_right .nav_list ul li a {
+  display: block;
+  padding: 14px 11px 14px 15px;
+  font-size: 17px;
+  color: #737373;
+}
+.main_right .nav_list ul li:hover {
+  border-bottom: 3px solid #ffa130;
+  box-sizing: border-box;
+}
+.main_right .nav_list ul li:hover a {
+  color: #ffa130;
+}
+.main_right .nav_list ul li:last-child {
+  margin-right: 0;
+}
+.main_right .nav_list ul .myOrder2 {
+  text-align: left;
+  width: 100px;
+}
+.main_right .nav_list ul .myOrder2:hover {
+  border-bottom: none;
+}
+.main_right .nav_list ul .myOrder2:hover a {
+  color: #737373;
+}
+.main_right .nav_list ul .myOrder2 a {
+  border: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+.main_right .details {
+  margin-top: 33px;
+}
+.main_right .details .details_title {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #e5e5e5;
+}
+.main_right .details .details_title ul {
+  background: #f5f5f5;
+  padding-left: 41px;
+}
+.main_right .details .details_title ul li {
+  color: #808080;
+  font-size: 14px;
+}
+.main_right .details .details_title ul li span {
+  display: inline-block;
+  text-align: center;
+}
+.main_right .details .details_title ul li .v1 {
+  width: 35%;
+  text-align: left;
+}
+.main_right .details .details_title ul li .v2 {
+  width: 14%;
+}
+.main_right .details .details_title ul li .v3 {
+  width: 18%;
+}
+.main_right .details .details_title ul li .v4 {
+  width: 17%;
+}
+.main_right .details .details_title ul li .v5 {
+  width: 16%;
+}
+.main_right .details .details_next {
+  text-align: right;
+  padding: 14px 0;
+}
+.main_right .details .details_next a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #CCC;
+  text-align: center;
+  color: #383838;
+}
+.main_right .details .details_next a:hover {
+  color: #fb8329;
+}
+.main_right .details .details_next span {
+  display: inline-block;
+  border: 1px solid #CCC;
+  width: 42px;
+  height: 20px;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 7px;
+}
+.main_right .details .order_number {
+  margin-bottom: 15px;
+}
+.main_right .details .order_number p {
+  height: 43px;
+  line-height: 43px;
+  font-size: 14px;
+  color: #666;
+  padding-left: 43px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+}
+.main_right .details .order_number p a {
+  display: inline-block;
+  background: url(../img/trash.jpg) 0 center no-repeat;
+  width: 17px;
+  height: 43px;
+  float: right;
+  margin-right: 65px;
+  line-height: 43px;
+}
+.main_right .details .order_number ul {
+  padding-left: 41px;
+  border: 1px solid #e6e6e6;
+}
+.main_right .details .order_number ul li span {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.main_right .details .order_number ul li .v1 {
+  width: 35%;
+  text-align: left;
+  margin: 20px auto;
+  font-size: 13px;
+  color: #4c4c4c;
+}
+.main_right .details .order_number ul li .v1 span var {
+  float: left;
+  margin-right: 27px;
+}
+.main_right .details .order_number ul li .v1 span span {
+  width: 185px;
+  margin-top: 41px;
+  text-align: left;
+}
+.main_right .details .order_number ul li .v2 {
+  width: 14%;
+  color: #666;
+  font-size: 14px;
+}
+.main_right .details .order_number ul li .v3 {
+  width: 18%;
+  border-right: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  height: 124px;
+  padding: 44px 0;
+}
+.main_right .details .order_number ul li .v3 var {
+  color: #ed601b;
+  font-size: 16px;
+}
+.main_right .details .order_number ul li .v3 .online {
+  color: #999;
+  font-size: 13px;
+}
+.main_right .details .order_number ul li .v4 {
+  width: 17%;
+  border-right: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  padding: 44px 0;
+}
+.main_right .details .order_number ul li .v4 var {
+  color: #666;
+  font-size: 13px;
+}
+.main_right .details .order_number ul li .v5 {
+  width: 16%;
+  color: #737373;
+  font-size: 13px;
+}
+.main_right .details .order_number ul li .v5 a {
+  display: inline-block;
+  width: 100px;
+  height: 33px;
+  color: #f83131;
+  border: 1px solid #f83131;
+  border-radius: 4px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.f10_2 {
+  margin-top: 333px;
+}

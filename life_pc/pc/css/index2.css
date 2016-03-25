@@ -1,0 +1,142 @@
+.main {
+  margin-bottom: 75px;
+}
+.main .main_right {
+  border: 1px solid #f5f5f5;
+  width: 985px;
+}
+.main .main_right .personal_things {
+  width: 995px;
+  height: 46px;
+}
+.main .main_right .personal_things span {
+  font-size: 18px;
+  color: #4c4c4c;
+  line-height: 46px;
+  display: inline-block;
+  padding: 0 11px 0 15px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  text-align: center;
+}
+.main .main_right .personal_message {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding-left: 20px;
+}
+.main .main_right .personal_message .head_portrait {
+  padding-top: 44px;
+}
+.main .main_right .personal_message .head_portrait span {
+  font-size: 14px;
+  color: #999;
+}
+.main .main_right .personal_message .head_portrait a {
+  margin-top: 2px;
+  margin-left: 45px;
+  position: relative;
+}
+.main .main_right .personal_message .head_portrait a span {
+  display: none;
+  width: 84px;
+  height: 28px;
+  line-height: 23px;
+  background: url(../img/shadow.png) 0 0 no-repeat;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  left: 3px;
+  bottom: 2px;
+}
+.main .main_right .personal_message .head_portrait a:hover span {
+  display: block;
+}
+.main .main_right .personal_message .head_portrait span,
+.main .main_right .personal_message .head_portrait a {
+  display: inline-block;
+  vertical-align: top;
+}
+.main .main_right .personal_message form {
+  margin-top: 52px;
+}
+.main .main_right .personal_message form dl dt label {
+  color: #999;
+  font-size: 14px;
+}
+.main .main_right .personal_message form dl dt .userName {
+  margin-right: 47px;
+}
+.main .main_right .personal_message form dl dt .contact_way {
+  margin-right: 17px;
+}
+.main .main_right .personal_message form dl dt input {
+  color: #4c4c4c;
+  font-size: 14px;
+  border: 1px solid #e6e6e6;
+  height: 45px;
+  line-height: 45px;
+  width: 265px;
+  padding-left: 10px;
+}
+.main .main_right .personal_message form dl dd {
+  color: #737373;
+  font-size: 12px;
+  padding-left: 91px;
+  margin-top: 10px;
+  margin-bottom: 37px;
+}
+.main .main_right .personal_message form a {
+  display: block;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #f29525;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 50px 0 113px 179px;
+}
+.main .main_right .alter {
+  padding-top: 31px;
+}
+.main .main_right .alter p {
+  font-size: 12px;
+  color: #737373;
+  margin-left: 20px;
+  margin-top: 49px;
+}
+.main .main_right .alter p span strong {
+  font-size: 14px;
+  color: #4c4c4c;
+  margin-right: 48px;
+}
+.main .main_right .alter p span .change_walletPwd {
+  margin-right: 21px;
+}
+.main .main_right .alter p a {
+  font-size: 14px;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  text-align: center;
+  background: #26c08a;
+  border-radius: 4px;
+  margin-left: 71px;
+}
+.main .main_right .alter p span,
+.main .main_right .alter p a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main .main_right .alter .change_password {
+  margin-top: 0;
+}
+.main .main_right .alter .upload_picture {
+  margin-bottom: 48px;
+}
+.main .main_right .alter .upload_picture a {
+  margin-left: 180px;
+}
