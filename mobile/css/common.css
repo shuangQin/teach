@@ -1,0 +1,264 @@
+#wrap {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+header {
+  height: 54px;
+  background-color: #f29004;
+  text-align: center;
+  position: relative;
+}
+header h1 {
+  color: #fdecdf;
+  font-size: 15px;
+  padding-top: 29px;
+}
+header .a_left {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "宋体";
+  position: absolute;
+  left: 10px;
+  top: 29px;
+}
+header .a_right {
+  color: #fbe4cf;
+  font-size: 13px;
+  position: absolute;
+  right: 8px;
+  top: 29px;
+}
+section .address {
+  background-color: white;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 15px 10px 12px 10px;
+  margin-bottom: 2%;
+  position: relative;
+}
+section .address p {
+  color: #333;
+  font-size: 14px;
+}
+section .address p:first-child {
+  margin-bottom: 15px;
+}
+section .address .name {
+  margin-right: 5%;
+}
+section .address .default {
+  color: #f29004;
+  margin-right: 2%;
+}
+section .address a {
+  color: #CCC;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "宋体";
+  position: absolute;
+  right: 2%;
+  top: 29px;
+}
+section li {
+  height: 81px;
+  padding: 9px 8px 12px 9px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: white;
+  position: relative;
+}
+section li a,
+section li img,
+section li dl {
+  display: inline-block;
+  vertical-align: middle;
+}
+section li a {
+  width: 16px;
+  height: 16px;
+}
+section li .selected {
+  background: url("../img/select_img.jpg") 0 0 no-repeat;
+  background-size: 25px 128px;
+}
+section li .no_selected {
+  background: url("../img/select_img.jpg") 0 -16px no-repeat;
+  background-size: 25px 128px;
+}
+section li img {
+  height: 98%;
+  margin-left: 6px;
+  margin-right: 7px;
+  border: 1px solid #e6e6e6;
+}
+section li dl {
+  margin-top: 3px;
+  width: 50%;
+  letter-spacing: 1px;
+}
+section li dl dt {
+  color: #1a1a1a;
+  font-size: 13px;
+}
+section li dl .standard {
+  color: #808080;
+  font-size: 11px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+section li dl .price {
+  color: #de0000;
+  font-size: 10px;
+}
+section li dl .num {
+  position: absolute;
+  right: 3%;
+  bottom: 8%;
+  width: 23%;
+  text-align: right;
+}
+section li dl .num a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+section li dl .num .cut {
+  background: url("../img/select_img.jpg") 0 -48px no-repeat;
+  background-size: 25px 128px;
+}
+section li dl .num .cut2 {
+  background: url("../img/select_img.jpg") 0 -102px no-repeat;
+  background-size: 25px 128px;
+}
+section li dl .num .add {
+  background: url("../img/select_img.jpg") 0 -74px no-repeat;
+  background-size: 25px 128px;
+}
+section .edit_address {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: white;
+  padding-left: 3%;
+  color: #6c6c6c;
+  font-size: 13px;
+}
+section .edit_address p {
+  line-height: 39px;
+  border-bottom: 1px solid #e9e9e9;
+  white-space: nowrap;
+}
+section .edit_address p:first-child {
+  color: #4d4d4d;
+}
+section .edit_address p:last-child {
+  border-bottom: none;
+}
+section .edit_address p input {
+  border: none;
+  padding-left: 1%;
+  width: 75%;
+  color: #6c6c6c;
+}
+section .edit_address p .detail {
+  padding-left: 0;
+  font-family: "Microsoft Yahei";
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+footer .account {
+  height: 40px;
+  border: 1px solid #e9e9e9;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 9px;
+}
+footer .account .all_select,
+footer .account p,
+footer .account .a_account {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .account .all_select {
+  color: #343434;
+  font-size: 13px;
+}
+footer .account .all_select:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+  background: url("../img/select_img.jpg") 0 -32px no-repeat;
+  background-size: 25px 128px;
+  padding-right: 7px;
+  vertical-align: middle;
+}
+footer .account p {
+  color: #3a3a3a;
+  font-size: 13px;
+  margin-right: 13%;
+}
+footer .account p .total {
+  color: #ed601b;
+  font-size: 11px;
+}
+footer .account p .no_freight {
+  color: #8f8f8f;
+  font-size: 11px;
+}
+footer .account .a_account {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: #ee4147;
+  color: #fef5f5;
+  border-radius: 4px;
+  text-align: center;
+}
+footer .footer_nav {
+  height: 46px;
+  text-align: center;
+  background-color: white;
+}
+footer .footer_nav a {
+  color: #949494;
+  font-size: 10px;
+  display: inline-block;
+  padding-top: 5px;
+  margin-right: 7%;
+}
+footer .footer_nav a:last-child {
+  margin-right: 0;
+}
+footer .footer_nav .cart {
+  color: #f39e3b;
+}
+footer .footer_nav a:before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 19px;
+  margin-bottom: 3px;
+  background: url("../img/footer_icons.jpg") no-repeat;
+  background-size: 21px 100px;
+}
+footer .footer_nav .f_icon1:before {
+  background-position: 7px 0;
+}
+footer .footer_nav .f_icon2:before {
+  background-position: 12px -20px;
+}
+footer .footer_nav .f_icon3:before {
+  background-position: 10px -40px;
+}
+footer .footer_nav .f_icon4:before {
+  background-position: 7px -60px;
+}
+footer .footer_nav .f_icon5:before {
+  background-position: 11px -81px;
+}

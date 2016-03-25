@@ -1,0 +1,21 @@
+body {
+  background-color: #f2f2f2;
+}
+.section {
+  margin-top: 9px;
+}
+footer {
+  text-align: center;
+  bottom: 32px;
+}
+.confirm {
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 24%;
+  padding-right: 24%;
+  height: 39px;
+  line-height: 39px;
+  background-color: #f29004;
+  border-radius: 4px;
+}

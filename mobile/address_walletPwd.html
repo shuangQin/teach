@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/three.css">
+    <link rel="stylesheet" href="css/eight.css">
+</head>
+<body>
+	<div id="wrap">
+	  <header>
+		<a href="address_edit.html" class="a_left">&lt;</a>
+		<h1>确认下单</h1>
+	  </header>
+	  <section>
+	  	<div class="address">
+	  	  <p><span class="name">刘晓心</span>13562021254</p>
+	  	  <p><span class="default">[默认]</span>广州市天河区东圃时代TIT广场</p>
+	  	  <a href="###">&gt;</a>
+	  	</div>
+	  	<div class="buy_goods">
+	  		<h2>购买商品</h2>
+	  		<ul>
+	  		  <li class="no_pl">
+				<img src="img/buy_something.jpg" alt="" class="food">
+				<dl>
+					<dt class="ellipsis">坚果特产山核桃奶油味碧根碧根</dt>
+					<dd class="standard">规格：1盒6片</dd>
+					<dd class="price">&yen;29.5<span class="two">x&nbsp;2</span></dd>
+				</dl>
+			  </li>
+	  		</ul>
+	  		<p><span>运费：</span><span>&yen;10</span></p>
+	  		<p><label>备注：</label><input type="text"></p>
+	  	</div>
+	  	<div class="pay_way">
+	  		<h2>支付方式</h2>
+	  		<p class="wallet">我的钱包<a href="###" class="choose" id="wallet_pwd">&nbsp;</a></p>
+	  		<p class="alipay">支付宝<a href="###" class="no_choose">&nbsp;</a></p>
+	  		<p class="weixin">微信支付<a href="###" class="no_choose">&nbsp;</a></p>
+	  	</div>
+	  	<div class="payNow">
+	  		<p>合计：<span>&yen;50</span><a href="success_pay.html">立即支付</a></p>
+	  	</div>
+	  </section>
+	</div>
+	<div id="mask">
+		<div id="block">
+		  <h2>钱包密码</h2>
+		  <p>&yen;50.00</p>
+		  <a href="###">取消</a><a href="###">付款</a>
+		</div>
+	</div>
+	<script>
+     var wallet_pwd=document.getElementById("wallet_pwd");
+     var mask=document.getElementById("mask");
+     var block=document.getElementById("block");
+     var cancel=block.getElementsByTagName("a")[0];
+     var payment=block.getElementsByTagName("a")[1];
+
+     wallet_pwd.onclick=function(){
+     	mask.style.display="block";
+     	block.style.display="block";
+
+     	var oLeft=(document.documentElement.clientWidth-block.offsetWidth)/2;
+     	var oTop=(document.documentElement.clientHeight-block.offsetHeight)/2;
+     	block.style.left=oLeft+"px";
+     	block.style.top=oTop+"px";
+     }
+
+     window.onresize=function(){
+     	var oLeft=(document.documentElement.clientWidth-block.offsetWidth)/2;
+     	var oTop=(document.documentElement.clientHeight-block.offsetHeight)/2;
+     	block.style.left=oLeft+"px";
+     	block.style.top=oTop+"px";
+     }
+
+     cancel.onclick=function(){
+     	mask.style.display="none";
+     	block.style.display="none";
+     }
+
+     payment.onclick=function(){
+     	mask.style.display="none";
+     	block.style.display="none";
+     }
+	</script>
+</body>
+</html>
