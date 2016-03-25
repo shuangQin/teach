@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<style>
+	 *{
+	 	margin: 0;
+	 	padding: 0;
+	 }
+     #wrap{
+     	width: 320px;
+     	height: 480px;
+     	margin: 0 auto;
+     	background: url(img/game_bg.jpg) center center no-repeat;
+     	position: relative;
+     }
+     #score{
+       position: absolute;
+       left: 60px;
+       top: 11px;
+       color: white;
+       font-size: 20px;
+       font-family: arial;
+     }
+     #timeBar{
+     	position: absolute;
+     	left: 63px;
+     	top: 66px;
+     	width: 180px;
+     	height: 16px;
+     	background: url(img/progress.png) 0 0 no-repeat;
+     }
+     #wolfBox div{
+     	width: 108px;
+      height: 101px;
+      position: absolute;
+      background-repeat: no-repeat;
+     }
+     #menu{
+      position: absolute;
+      top: 164px;
+      width: 100%;
+      text-align: center;
+     }
+     #menu a{
+      display: block;
+      text-decoration: none;
+      color: #F60;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: "Microsoft Yahei";
+      text-shadow: 0 0 5px #FFFF00;
+      line-height: 50px;
+     }
+     #gameOver{
+      display: none;
+      position: absolute;
+      top: 200px;
+      width: 100%;
+      text-align: center;
+      color: #F60;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: "Microsoft Yahei";
+      text-shadow: 0 0 5px #FFFF00;
+      line-height: 50px;
+     }
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="score">0</div>
+		<div id="timeBar"></div>
+		<div id="wolfBox"></div>
+    <div id="menu">
+      <a href="javascript:void(0);" id="start">开始</a>
+      <a href="javascript:void(0);" id="handle">游戏操作说明</a>
+    </div>
+    <div id="gameOver">game over!</div>
+	</div>
+	<script>
+     var wolfBox=document.getElementById("wolfBox");
+     var score=document.getElementById("score");
+     var timeBar=document.getElementById("timeBar");
+     var start=document.getElementById("start");
+     var menu=document.getElementById("menu");
+     var gameOver=document.getElementById("gameOver");
+     var holeArr=[
+       {l:"15px",t:"157px"},
+       {l:"94px",t:"112px"},
+       {l:"183px",t:"139px"},
+       {l:"99px",t:"189px"},
+       {l:"12px",t:"218px"},
+       {l:"195px",t:"209px"},
+       {l:"26px",t:"291px"},
+       {l:"115px",t:"271px"},
+       {l:"203px",t:"293px"}
+     ];
+
+     var timer;
+     start.onclick=function(){
+      menu.style.display="none";
+      timer=setInterval(createWolf,500);
+     }
+
+     function randNum(min,max){
+      return parseInt(Math.random()*(max-min+1)+min);
+     }
+    
+     var gate=0;
+     var tWidth=timeBar.offsetWidth;
+     var arr=[];
+     function createWolf(){
+      tWidth-=2;
+      if(tWidth<0){
+        tWidth=0;
+        gameOver.style.display="block";
+        clearInterval(timer);
+      }
+      timeBar.style.width=tWidth+"px";
+
+      var div=document.createElement("div");
+      wolfBox.appendChild(div);
+
+      // 第一种方法
+      var rnd=randNum(0,8);
+      while(arr.indexOf(rnd)>-1){
+         rnd=randNum(0,8); 
+       }
+      arr.push(rnd);
+
+      if(arr.length==3){
+         arr.splice(0,2);
+        }
+  
+      // 第二种方法
+      // var rnd;
+      // while(arr.length<9){
+      // 	rnd=randNum(0,8);
+      // 	if(arr.indexOf(rnd)==-1){
+      //    arr.push(rnd);
+      //  }    
+      // }
+
+      // if(arr.length==9){
+      //    arr.splice(0,8);
+      //   }
+   
+      console.log(arr);
+      var hole=holeArr[rnd];
+      div.style.left=hole.l;
+      div.style.top=hole.t;
+       
+      var who=(Math.random()>0.8) ? "x" : "h";
+      div.style.backgroundImage="url(img/"+who+".png)";
+
+      div.index=0;
+      div.flag=true;
+      div.ifClick=false;
+      div.onclick=function(){
+        div.ifClick=true;
+        div.index=5;
+        if(who=="h"){
+          gate+=10;
+          score.innerHTML=gate;
+        }
+        if(who=="x"){
+          gate-=10;
+          score.innerHTML=gate;
+        }
+        if(gate<0){
+           gameOver.style.display="block";
+           clearInterval(timer);
+        }
+      }
+      div.ownTimer=setInterval(function(){
+       if(div.flag || div.ifClick){
+        div.index++;
+       }
+       else{
+        div.index--;
+       }
+       if(div.index>=5){
+         div.flag=false;
+       }
+       if(div.index<0 || div.index>9){
+         clearInterval(div.ownTimer);
+         div.parentNode.removeChild(div);
+       }
+       div.style.backgroundPosition=-108*(div.index)+"px 0";
+      },100);
+     }
+	</script>
+</body>
+</html>
